@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './BattleshipMainLogo.png';
+import logoBackground from './BattleshipBackgroundLogo.png';
+import gitHubLogo from './github-logo.JPG';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <main className="App">
+      <div className="App-main">
+        <img src={logo} className="App-logo-top" alt="main-logo" />
+        <img src={logoBackground} className="App-logo-bottom" alt="logo-background" />
+        <button type="button" className="App-main-btn">Start The Battle!</button>
+      </div>
+    <footer className="App-footer">
+        <img src={gitHubLogo} className="App-footer-logo" alt="github-logo" />''
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/anapaulaoliva/Battleship-React"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          Learn React
+          alt="source-code"
+        > 
+        source code
         </a>
-      </header>
-    </div>
+        <br /><br />
+      </footer>
+    </main>
   );
 }
 
