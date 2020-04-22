@@ -1,14 +1,13 @@
 import React from 'react';
 import gitHubLogo from '../assets/github-logo.JPG';
-//TODO: importar componente a welcome
 
 const Footer = () => {
 
 return(
-<footer className="App-footer">
-    <img src={gitHubLogo} className="App-footer-logo" alt="github-logo" />''
+<footer className="Welcome-footer">
+    <img src={gitHubLogo} className="Welcome-footer-logo" alt="github-logo" />''
     <a
-        className="App-link"
+        className="Welcome-footer-link"
         href="https://github.com/anapaulaoliva/Battleship-React"
         target="_blank"
         rel="noopener noreferrer"
