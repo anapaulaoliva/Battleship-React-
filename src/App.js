@@ -1,11 +1,10 @@
 import React from 'react';
-import Welcome from './views/welcome.js';
-
+import Routes from './Routes.js';
 
 function App() {
-  //TODO: Aqui solo debe ir Router y se deben importar las vistas.
+
   return (
-    <Welcome/>
+    <Routes />
   );
 }
 
