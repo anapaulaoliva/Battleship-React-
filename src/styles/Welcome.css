@@ -1,0 +1,73 @@
+.Welcome {
+    text-align: center;
+    font-family: monospace;
+  }
+  
+  .LogoTop {
+    position: fixed;
+    padding-bottom: 7em;
+    height: 40vmin;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .LogoBottom {
+    position: fixed;
+    padding-bottom: 7em;
+    height: 40vmin;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .MainBtn {
+    position: fixed;
+    top: 60vmin;
+    padding: 1em;
+    font-family: monospace; /*TODO:herencia de fuente*/
+    background-color: hsl(93, 100%, 70%);
+    box-shadow: 0px 10px 0px 0px hsl(93, 100%, 30%);
+    cursor: pointer;
+  }
+  .MainBtn:hover {
+    animation-name: MainBtn;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) { /*TODO: Definicion*/
+    .LogoBottom {
+      animation: logo-animation infinite 10s linear;
+    }
+  }
+  
+  .Main {
+    background-color: #000000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  
+  
+  @keyframes logo-animation { /*TODO: Keyframes responsivos*/
+    0%, 100% {
+      left: 23%;
+    }
+    25% {
+      left: 20%;
+    }
+    75% {
+      left: 27%;
+    } 
+  }
+  @keyframes MainBtn {
+  from {
+    padding: 1em;
+  }
+  to {
+    padding: 1.3em;
+  }
+  }
+  
