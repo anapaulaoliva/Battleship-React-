@@ -1,0 +1,12 @@
+@media (prefers-reduced-motion: no-preference) {
+    .Board {
+        background-color:rgba(0, 0, 255, 0.815);
+        border: 2px solid rgb(127, 255, 212);
+        display: flex;
+        flex-wrap: wrap;
+        width: 33vmax;
+        height: 33vmax;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+}
