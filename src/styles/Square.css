@@ -1,0 +1,19 @@
+@media (prefers-reduced-motion: no-preference) {
+        .square {
+            width: 3vmax;
+            height: 3vmax;
+            background-color: rgba(0, 119, 255, 0.966) ;
+            border: 1px solid rgb(0, 247, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .circle {
+                background: rgba(1, 112, 240, 0.781) ;
+                width: 1vmax;
+                height: 1vmax;
+                border-radius: 50%;
+                border: 1px solid rgba(234, 244, 255, 0.568);
+            }
+        }
