@@ -1,19 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/BattleshipMainLogo.png';
 import logoBackground from '../assets/BattleshipBackgroundLogo.png';
-import '../App.css';
+import '../styles/App.css';
 import Footer from '../components/Footer.js';
 
-function Welcome() {
-  //TODO: Aqui solo debe ir Router y se deben importar las vistas.
-  //TODO: Cambiar nombres clases de app a welcome 
-  
+const Welcome = () => {
+
   return (
-    <main className="App">
-        <div className="App-main">
-        <img src={logo} className="App-logo-top" alt="main-logo" />
-        <img src={logoBackground} className="App-logo-bottom" alt="logo-background" />
-        <button type="button" className="App-main-btn">Start The Battle!</button>
+    <main className="Welcome">
+        <div className="Main">
+          <img src={logo} className="LogoTop" alt="MainLogo" />
+          <img src={logoBackground} className="LogoBottom" alt="logo-background" />
+          <Link to='/home'>
+          <button type="button" className="MainBtn">Start The Battle!</button>
+        </Link>
       </div>
 
       <Footer/>
