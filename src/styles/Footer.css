@@ -1,0 +1,12 @@
+.Welcome-footer {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+  }
+  .Welcome-footer-link {
+    color: #aaff65;
+    font-size: medium;
+  }
+  .Welcome-footer-logo {
+    height: 2.5vmin;
+  }
