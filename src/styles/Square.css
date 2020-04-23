@@ -1,19 +1,22 @@
 @media (prefers-reduced-motion: no-preference) {
         .square {
-            width: 3vmax;
-            height: 3vmax;
-            background-color: rgba(0, 119, 255, 0.966) ;
-            border: 1px solid rgb(0, 247, 255);
+            margin-top: 1.5em;
+            margin-left: .1em;
+            width: 2vmax;
+            height: 2vmax;
+            background-color: rgba(202, 214, 203, 0.973) ;
+            border: 1px solid rgb(0, 0, 0);
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            border-radius: 10%;
         }
         .circle {
-                background: rgba(1, 112, 240, 0.781) ;
-                width: 1vmax;
-                height: 1vmax;
+                background: rgba(0, 0, 0, 0.781) ;
+                width: .5vmax;
+                height: .5vmax;
                 border-radius: 50%;
-                border: 1px solid rgba(234, 244, 255, 0.568);
+                border: 1px solid rgb(101, 107, 119);
             }
         }

@@ -2,4 +2,6 @@
 @import 'Footer.css';
 @import 'Board.css';
 @import 'Square.css';
+@import 'GameContainer.css';
+@import 'ShipSelector.css';
 /*TODO:Me da error cambiarle el nombre*/

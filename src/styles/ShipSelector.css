@@ -1,0 +1,51 @@
+.shipSelector {
+    background-color:rgba(0, 0, 0, 0.815);
+    border: 2px solid rgb(255, 11, 222);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:  baseline;
+    width: 14vmax;
+    height: 28vmax;
+    margin: 0 auto;
+    font-family: monospace;
+    font-size: .8em;
+    color: rgb(95, 255, 47);
+}
+.shipSelector-container {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+}
+
+.aircraft-ship {
+    width: 20vmin;
+    height: 7vmin;
+}
+.cruiser-ship {
+    width: 15vmin;
+    height: 5vmin;
+}
+.carrier-ship {
+    width: 10vmin;
+    height: 3vmin;
+}
+.ship-info {
+    display: flex;
+    text-align: center;
+    flex-flow: column;
+    font-size: .7em;
+    padding: .8em;
+    cursor: pointer;
+}
+.ship-info:hover {
+    animation-name: Ship-name;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+}
+@keyframes Ship-name {
+    100% {
+        color: rgb(245, 255, 242);
+        text-shadow: 2px 2px 10px rgb(245, 255, 242);
+    }
+}

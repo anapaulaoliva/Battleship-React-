@@ -20,6 +20,7 @@
   .MainBtn {
     position: fixed;
     top: 60vmin;
+    left: 45vmax;
     padding: 1em;
     font-family: monospace; /*TODO:herencia de fuente*/
     background-color: hsl(93, 100%, 70%);
