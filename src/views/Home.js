@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import '../styles/App.css';
 import NavBar from '../components/NavBar.js';
-import Board from '../components/Board.js';
+import GameContainer from '../components/GameContainer.js';
 import Footer from '../components/Footer.js';
 
 class Home extends Component {
@@ -12,7 +12,7 @@ class Home extends Component {
       <main className="Home">
       <NavBar/>
         <div className="Main">
-          <Board/>
+          <GameContainer/>
         </div>
         <Footer/>
       </main>

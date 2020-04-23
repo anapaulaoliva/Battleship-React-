@@ -1,12 +1,21 @@
 @media (prefers-reduced-motion: no-preference) {
     .Board {
-        background-color:rgba(0, 0, 255, 0.815);
-        border: 2px solid rgb(127, 255, 212);
+        position: relative;
+        background-color:rgba(0, 0, 0, 0.815);
         display: flex;
         flex-wrap: wrap;
-        width: 33vmax;
-        height: 33vmax;
+        width: 30vmax;
+        height: 30vmax;
         margin: 0 auto;
-        justify-content: space-around;
+        justify-content: center;
+        z-index: 2;
     }
+    .Border {
+        display: flex;
+        align-self: flex-start;
+        position: absolute;
+        width: 60vmin;
+        height: 60vmin;
+        z-index: 1;
+        pointer-events: none;    }
 }

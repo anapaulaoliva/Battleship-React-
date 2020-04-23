@@ -1,0 +1,13 @@
+@media (prefers-reduced-motion: no-preference) {
+    .gameContainer{
+        background-color:rgba(0, 0, 0, 0.815);
+        border: 2px solid rgb(0, 199, 27);
+        display: flex;
+        flex-wrap: wrap;
+        width: 50vmax;
+        height: 30vmax;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
