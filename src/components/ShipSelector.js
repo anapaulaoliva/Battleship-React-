@@ -12,15 +12,24 @@ const ShipSelector = () => {
             </div>
             <div className="shipSelector-container">
                 <div className="ship-info">
-                    <img src={AircraftShip} className="aircraft-ship" alt="aircraft-ship" />
+                    <img 
+                        src={AircraftShip} 
+                        className="aircraft-ship" 
+                        alt="aircraft-ship" />
                     <span>Aricraft Ship</span>
                 </div>
                 <div className="ship-info">
-                    <img src={CruiserShip} className="cruiser-ship" alt="cruiser-ship" />
+                    <img 
+                        src={CruiserShip} 
+                        className="cruiser-ship" 
+                        alt="cruiser-ship" />
                     <span>Cruiser Ship</span>
                 </div>
                 <div className="ship-info">
-                    <img src={CarrierShip} className="carrier-ship" alt="carrier-ship" />
+                    <img 
+                        src={CarrierShip} 
+                        className="carrier-ship" 
+                        alt="carrier-ship" />
                     <span>Carrier Ship</span>
                 </div>
             </div>

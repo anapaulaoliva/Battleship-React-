@@ -5,26 +5,27 @@ import '../styles/Board.css';
 
 class Board extends Component {
     render() {
-        const squares = [1,2,3,4,5,6,7,8,9,10];
-        //const squares = [];
-        //const totalSquares = 100;
+        let rows = [];
+        for(let y = 0; y < 10; y++) {
+            const cells = [];
+            for (let x = 0; x < 10; x++) {
+                cells.push(<Square/>);
+            }
+            rows.push(<tr>{cells}</tr>);
+        }
+
         return (
             <>
-            
             <section className="Board">
-            <img src={Border} className="Border" alt="Board-border"/>
+            {/*<img src={Border} 
+                className="Border" 
+                alt="Board-border"/>*/}
             <br/>
-                {
-                    squares.map((square) => <Square/>)
-                    /*while (squares < totalSquares.length) {
-                        const square = {
-                            key: 'key',
-                        };
+                {   
+                    <table><tbody>{rows}</tbody></table>
+                    //squares.map((square) => <Square/>)
 
-                        squares.push(square);
-                        squares.push({...square});*/
                 }
-
             </section>
             </>
         )

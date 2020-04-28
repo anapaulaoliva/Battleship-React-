@@ -5,7 +5,10 @@ const Footer = () => {
 
 return(
 <footer className="Welcome-footer">
-    <img src={gitHubLogo} className="Welcome-footer-logo" alt="github-logo" />''
+    <img 
+        src={gitHubLogo} 
+        className="Welcome-footer-logo" 
+        alt="github-logo" />''
     <a
         className="Welcome-footer-link"
         href="https://github.com/anapaulaoliva/Battleship-React"
@@ -15,7 +18,8 @@ return(
     > 
     source code
     </a>
-    <br /><br />
+    <br />
+    <br />
 </footer>
 );
 }
