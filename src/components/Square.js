@@ -4,9 +4,9 @@ import '../styles/Square.css';
 class Square extends Component {
     render() {
         return (
-            <div className="square">
+            <td className="square">
                 <div className="circle"></div>
-            </div>
+            </td>
         )
     }
 } 

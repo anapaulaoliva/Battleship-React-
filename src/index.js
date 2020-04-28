@@ -1,18 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Firebase from './Firebase.js';
 import './styles/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-// Browser Router
-import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </BrowserRouter>,
+      <App />,
   document.getElementById('root')
 );
 
