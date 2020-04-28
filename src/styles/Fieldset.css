@@ -1,0 +1,11 @@
+.form {
+    border: none;
+  }
+  input {
+    background-color: transparent;
+    font-size: 1em;
+    margin: .3em;
+    color: violet;
+    font-family: monospace;
+    text-align: center;
+  }
