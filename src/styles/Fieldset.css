@@ -9,3 +9,24 @@
     font-family: monospace;
     text-align: center;
   }
+  .error {
+    color: violet;
+    font-size: 2vmin;
+    animation: errors infinite 2s linear;
+
+  }
+  .inputError {
+    border-color: violet;
+  }
+  
+  @keyframes errors {
+    0% ,100% {
+      transform: rotate(0deg);
+    }
+    30% {
+      transform: rotate(2deg);
+    }
+    85% {
+      transform: rotate(-2deg);
+    }
+  }
