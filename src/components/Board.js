@@ -17,9 +17,9 @@ class Board extends Component {
         return (
             <>
             <section className="Board">
-            {/*<img src={Border} 
+            <img src={Border} 
                 className="Border" 
-                alt="Board-border"/>*/}
+                alt="Board-border"/>
             <br/>
                 {   
                     <table><tbody>{rows}</tbody></table>

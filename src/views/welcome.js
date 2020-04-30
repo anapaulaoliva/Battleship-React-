@@ -12,7 +12,7 @@ const Welcome = () => {
         <div className="Main">
           <div className="logo">
             <img src={logo} className="LogoTop" alt="MainLogo" />
-            {/*<img src={logoBackground} className="LogoBottom" alt="logo-background" />*/}
+            <img src={logoBackground} className="LogoBottom" alt="logo-background" />
           </div>
           <Fieldset/>  
         </div>
