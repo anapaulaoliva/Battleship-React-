@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Square from './Square.js';
 import Border from '../assets/board-border.png';
 import '../styles/Board.css';

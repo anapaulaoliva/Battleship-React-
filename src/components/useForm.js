@@ -15,10 +15,12 @@ const useForm = (callback, validate) => {
             name: '',
             score: 0
         },
-        date_added: firebase.firestore.FieldValue.serverTimestamp(),*/
+        ,*/
     });
     //new state for errors
-    const [errors, setErrors] = useState({ player1: "", player2: ""
+    const [errors, setErrors] = useState({ 
+        player1: "",
+        player2: "",
         /*player1: {
             name: '',
         },
@@ -40,7 +42,8 @@ const useForm = (callback, validate) => {
             [id]: {
                 name: value,
                 score: 0}*/
-            [name]: value
+            [name]: value,
+            date_added: firebase.firestore.FieldValue.serverTimestamp()
         });
     }
 
