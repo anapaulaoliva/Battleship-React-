@@ -13,8 +13,9 @@
     .Border {
         display: flex;
         position: absolute;
-        width: 60vmin;
-        height: 60vmin;
+        width: 50vmin;
+        height: 48vmin;
         z-index: 1;
-        pointer-events: none;    }
+        pointer-events: none;    
+    }
 }

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Square from './Square.js';
 import Border from '../assets/board-border.png';
 import '../styles/Board.css';
@@ -17,9 +17,9 @@ class Board extends Component {
         return (
             <>
             <section className="Board">
-            {/*<img src={Border} 
+            <img src={Border} 
                 className="Border" 
-                alt="Board-border"/>*/}
+                alt="Board-border"/>
             <br/>
                 {   
                     <table><tbody>{rows}</tbody></table>
