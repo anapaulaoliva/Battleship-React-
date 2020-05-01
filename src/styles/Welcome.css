@@ -37,7 +37,7 @@
   
   @media (prefers-reduced-motion: no-preference) { /*TODO: Definicion*/
     .LogoBottom {
-      animation: logo-animation infinite 10s linear;
+      animation: logo-animation infinite 20s linear;
     }
   }
   
@@ -52,13 +52,13 @@
   
   @keyframes logo-animation { /*TODO: Keyframes responsivos*/
     0%, 100% {
-      left: 23%;
+      left: 15%;
     }
     25% {
-      left: 20%;
+      left: 10%;
     }
     75% {
-      left: 27%;
+      left: 20%;
     } 
   }
   @keyframes MainBtn {

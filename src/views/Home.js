@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import '../styles/App.css';
 import NavBar from '../components/NavBar.js';
 import GameContainer from '../components/GameContainer.js';
