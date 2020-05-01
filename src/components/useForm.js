@@ -35,15 +35,15 @@ const useForm = (callback, validate) => {
 
     const handleChange = e => {
         //destructuring 
-        const { id, value, name } = e.target;
+        const { id, value } = e.target;
         setValues({
             ...values,
-            /*
+            date_added: firebase.firestore.FieldValue.serverTimestamp(),
             [id]: {
-                name: value,
-                score: 0}*/
-            [name]: value,
-            date_added: firebase.firestore.FieldValue.serverTimestamp()
+                'name': value,
+                score: 0
+            }
+            /*[name]: value,*/
         });
     }
 
@@ -52,7 +52,6 @@ const useForm = (callback, validate) => {
         e.preventDefault();
         setErrors(validate(values));
         setIsSubmitting(true);
-        //callback();
     };
     //useEffect hook
     //first argument function that is going to execute when somethings changing
