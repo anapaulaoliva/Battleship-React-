@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom';
 import  useForm  from './useForm.js';
 import validate from './validateForm.js';
 import '../styles/Fieldset.css';
+import json from '../data/json.js';
 
 const Fieldset = () => {
     // useState recibe un parámetro: el valor inicial del estado y devuelve un array de dos posiciones:
@@ -14,15 +15,17 @@ const Fieldset = () => {
 
     function submit() {
         firestore().collection("recordJugadores").add(values)
-        .then(() => {
+        .then(docRef => {
             history.push('/home');
-            console.log('Record successfully created!', values);
+            console.log('Record successfully created! ID: ', docRef.id)
+            return docRef;
+        }).then( docRef  => {
+            firestore().collection("recordJugadores").doc(docRef.id).collection("recordPartida").add({json});
         })
+        .catch(function(error) {
+            console.error("Error adding document: ", error);
+        });
     }
-            
-            
-            /*orderBy("timestamp", "desc").onSnapshot(snapshot => {      
-            //code goes here*/
 
     return(
         <fieldset className="form">
@@ -35,7 +38,7 @@ const Fieldset = () => {
                             type="text" 
                             id="player1" 
                             name="player1"
-                            value={/*values.player1.name*/values.player1} 
+                            value={values.name} 
                             onChange={handleChange}
                             placeholder="Player1" />
                             {errors.player1 &&
@@ -49,14 +52,14 @@ const Fieldset = () => {
                             type="text" 
                             id="player2" 
                             name="player2"
-                            value={/*values.player2.name*/ values.player2} 
+                            value={values.name} 
                             onChange={handleChange}
                             placeholder="Player2" />
                             {errors.player2 &&
                             <p className="error">{errors.player2}</p>}
                     </div>
             </div>
-               
+            
                     <button 
                         type="button" 
                         id = "saveButton"
@@ -65,7 +68,7 @@ const Fieldset = () => {
                     >
                     Start The Battle!
                     </button>
-               
+            
         </fieldset>
     );
 }
