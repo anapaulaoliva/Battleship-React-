@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/battleship-react/static/css/main.13a7c667.chunk.css",
+    "main.js": "/battleship-react/static/js/main.ae9f5376.chunk.js",
+    "main.js.map": "/battleship-react/static/js/main.ae9f5376.chunk.js.map",
+    "runtime-main.js": "/battleship-react/static/js/runtime-main.bc7e1246.js",
+    "runtime-main.js.map": "/battleship-react/static/js/runtime-main.bc7e1246.js.map",
+    "static/js/2.35bbc098.chunk.js": "/battleship-react/static/js/2.35bbc098.chunk.js",
+    "static/js/2.35bbc098.chunk.js.map": "/battleship-react/static/js/2.35bbc098.chunk.js.map",
+    "index.html": "/battleship-react/index.html",
+    "precache-manifest.4e1c3a101fb2149dc50501c4fe66d19f.js": "/battleship-react/precache-manifest.4e1c3a101fb2149dc50501c4fe66d19f.js",
+    "service-worker.js": "/battleship-react/service-worker.js",
+    "static/css/main.13a7c667.chunk.css.map": "/battleship-react/static/css/main.13a7c667.chunk.css.map",
+    "static/js/2.35bbc098.chunk.js.LICENSE.txt": "/battleship-react/static/js/2.35bbc098.chunk.js.LICENSE.txt",
+    "static/media/BattleshipBackgroundLogo.png": "/battleship-react/static/media/BattleshipBackgroundLogo.4dc05d30.png",
+    "static/media/BattleshipMainLogo.png": "/battleship-react/static/media/BattleshipMainLogo.d8528b5e.png",
+    "static/media/board-border.png": "/battleship-react/static/media/board-border.df87c968.png",
+    "static/media/github-logo.JPG": "/battleship-react/static/media/github-logo.283001a1.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc7e1246.js",
+    "static/js/2.35bbc098.chunk.js",
+    "static/css/main.13a7c667.chunk.css",
+    "static/js/main.ae9f5376.chunk.js"
+  ]
+}
